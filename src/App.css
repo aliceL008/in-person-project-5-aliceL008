@@ -540,6 +540,32 @@ a:hover {
 
 /* Responsive Design - Basic */
 @media (max-width: 768px) {
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        margin-top: var(--spacing-sm);
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: var(--spacing-xs) 0;
+    }
+
     h1 { font-size: 2rem; }
     h2 { font-size: 1.75rem; }
 
